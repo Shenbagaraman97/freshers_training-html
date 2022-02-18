@@ -1,0 +1,179 @@
+*{
+font-family: "Roboto";
+box-sizing: 0;
+}
+html{
+    font-size:10px;
+}
+body{
+    background-color: #669900;
+
+}
+/* ******* HEADER ****** */
+.container{
+    background-color: #fff;
+    margin:1.5rem 33rem;
+    width:64rem;
+
+}
+.header{
+    background-color: #99cc00;
+}
+
+.icon{
+    display: block;
+    /* color: chartreuse; */
+    background-image:linear-gradient(#99cc00,#99cc00);
+} 
+
+.heading{
+    font-size: 1.8rem;
+    font-weight: 300;
+    /* padding:1.2rem; */
+}
+
+/* ******FORM********* */
+.container-box{
+    margin: 1.7rem;
+}
+hr{
+    border-style: dotted;
+}
+.heading-secondary{
+    color:#444444;
+    font-size:1.3rem;
+    font-weight:500;
+
+}
+.list{
+    width:27.4rem;
+}
+.symbol{
+    font-size: 1.5rem;
+    color:#444444;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:0.7rem;
+    font-weight: 600;
+}
+.rich{
+    width:6rem;
+    margin-right:0.6rem;
+    border: 0.1rem solid #444;
+    
+}
+.fair{
+    width:1.9rem;
+    border: 0.1rem solid #444;
+
+}
+.amount{
+    display: inline-block;
+    font-size:1.1rem;
+    margin-left:3rem;
+    margin-right:3.9rem;
+}
+
+/* ********** LOCATION *********** */
+.location-address{
+    width:100%;
+}
+.city-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self:stretch;
+}
+.city{
+    width:100%;
+}
+.city-right{
+    width:90.5%;
+   margin-right:5rem
+}
+.city-list{
+    width:102.5%;
+
+}
+/* *********** BIODATA ********** */
+.age{
+    width:25%;
+}
+
+/* ********** CONTACT ********** */
+.contact{
+    font-size: 1.4rem;
+}
+.title{
+    width:1.9rem;
+}
+.fname{
+    width:5rem;    
+}
+.lname{
+    width:6rem;
+}
+.suffix{
+    width:2.1rem;
+}
+.gap{
+    margin:0.6rem;
+}
+.title-text{
+    font-size: 1.1rem;;
+    margin:0.8rem;
+}
+.fname-text{
+    font-size: 1.1rem;;
+    margin:0.9rem;
+}
+.lname-text{
+    font-size: 1.1rem;;
+    margin:1.2rem;
+}
+.suffix-text{
+    font-size: 1.1rem;;
+    margin:0.8rem;
+}
+
+.number{
+    width:1.9rem;
+}
+.number:last-child{
+    width: 2.3rem;
+}
+.number-text{
+    margin-right: 1.3rem;
+    font-size:1.1rem;
+}
+.btn{
+    font-size: 1.5rem;
+    margin: 0.9rem 0.9rem 0.9rem 0rem;
+}
+
+/* ******FOOTER******* */
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #669900;
+    margin:1.5rem 33rem;
+    width:64rem;
+   
+}
+.footer-text{
+    margin:0;
+    padding: 0;
+    color:#444444;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.footer-img{
+    margin: 0;
+    width:11.9rem;
+    height:3.3rem;
+    background-image:linear-gradient(#669900,#669900);
+
+}
+.link{
+    font-weight: 400;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wufoo Forms</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img class="icon" src="assets/images/wufoo-icon.png" alt="logo" />
+      </div>
+
+      <!-- FORM -->
+      <div class="container-box">
+        <!-- Mortgage -->
+        <h2 class="heading">Mortgage Application</h2>
+        <hr />
+        <h3 class="heading-secondary">Purpose of Mortgage or Loan</h3>
+        <select name="mortgage" class="list">
+          <option value="">Home Loan</option>
+          <option value="">Home Montgage</option>
+          <option value="">Refinance</option>
+          <option value="">Home Mortgage Refinance</option>
+          <option value="">Debt Consolidation Loan</option>
+          <option value="">Second Mortgage</option>
+          <option value="">Home Equity Loan</option>
+          <option value="">Home Improvement Loan</option>
+          <option value="">Bad Credit Montgage Loan</option>
+        </select>
+
+        <h3 class="heading-secondary">Loan Amount</h3>
+        <p>
+          <span class="symbol"> &#0036;</span
+          ><input class="rich" type="text" /> <span class="symbol"> .</span>
+          <input class="fair" type="text" />
+        </p>
+        <p><span class="amount">Dollars</span> <span>Cents</span></p>
+
+        <!-- Property type and value -->
+        <h3 class="heading-secondary">Type of Property</h3>
+        <select name="property" class="list">
+          <option value="">House</option>
+          <option value="">Condo</option>
+          <option value="">Land</option>
+        </select>
+
+        <h3 class="heading-secondary">Estimated Price or Value of Property</h3>
+        <p>
+          <span class="symbol"> &#0036;</span
+          ><input class="rich" type="text" /> <span class="symbol"> .</span>
+          <input class="fair" type="text" />
+        </p>
+        <p><span class="amount">Dollars</span> <span>Cents</span></p>
+
+        <!--Location  -->
+        <div>
+          <h3 class="heading-secondary">Location of property</h3>
+          <input type="text" class="location-address" />
+          <p><span class="address">Street Address</span></p>
+
+          <input type="text" class="location-address" />
+          <p><span class="address">Address Line 2</span></p>
+
+          <div class="city-box">
+            <div>
+              <input type="text" class="city-right" />
+              <p><span class="address">City</span></p>
+            </div>
+
+            <div>
+              <input type="text" class="city" />
+              <p><span class="address">State / Province / Region</span></p>
+            </div>
+
+            <div>
+              <input type="text" class="city-right" />
+              <p><span class="address">Postal / Zipcode</span></p>
+            </div>
+
+            <div>
+              <select name="property" class="city-list">
+                <option value=""></option>
+
+                <option value="">Afghanistan</option>
+                <option value="">Albania</option>
+                <option value="">Bhutan</option>
+                <option value="">Bangaladesh</option>
+                <option value="">Canada</option>
+                <option value="">China</option>
+                <option value="">Denmark</option>
+                <option value="">Egypt</option>
+                <option value="">France</option>
+                <option value="">Germany</option>
+                <option value="">Hungary</option>
+                <option value="">Indonesia</option>
+                <option value="">India</option>
+                <option value="">Israel</option>
+                <option value="">Japan</option>
+                <option value="">Kuwait</option>
+                <option value="">Libya</option>
+                <option value="">Myanmer</option>
+                <option value="">Nepal</option>
+                <option value="">Oman</option>
+                <option value="">Pakistan</option>
+                <option value="">Quatar</option>
+                <option value="">Russia</option>
+                <option value="">Sri Lanka</option>
+                <option value="">Thailand</option>
+                <option value="">USA</option>
+                <option value="">Vietnam</option>
+                <option value="">West Indies</option>
+                <option value="">Yemen</option>
+              </select>
+              <p><span class="address">Country</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment/Company/Referral -->
+        <div>
+          <h3 class="heading-secondary">Down Payment Percentage</h3>
+          <select name="choice" class="list">
+            <option value=""></option>
+            <option value="">Not Applicable</option>
+            <option value="">0% - 5%</option>
+            <option value="">6% - 10%</option>
+          </select>
+
+          <h3 class="heading-secondary">Current Montgage Company</h3>
+          <select name="choice" class="list">
+            <option value=""></option>
+            <option value="">Company one</option>
+            <option value="">Company two</option>
+          </select>
+
+          <h3 class="heading-secondary">
+            Would you like a Referral to a Real Estate Agent
+          </h3>
+          <select name="choice" class="list">
+            <option value=""></option>
+            <option value="">Yes, I'm buying a home.</option>
+            <option value="">Yes, I'm selling and buying a home.</option>
+            <option value="">Yes, i'm selling.</option>
+            <option value="">No.</option>
+          </select>
+        </div>
+
+        <!-- Bio-data -->
+        <h3 class="heading-secondary">Age</h3>
+        <input type="text" class="age" />
+
+        <h3 class="heading-secondary">Occupation</h3>
+        <input type="text" class="city" />
+
+        <h3 class="heading-secondary">
+          How long you have been at your current job?
+        </h3>
+        <select name="choice" class="list">
+          <option value="">First choice</option>
+          <option value="">Second choice</option>
+          <option value="">Third choice</option>
+        </select>
+
+        <h3 class="heading-secondary">Household Income</h3>
+        <p>
+          <span class="symbol"> &#0036;</span
+          ><input class="rich" type="text" /> <span class="symbol"> .</span>
+          <input class="fair" type="text" />
+        </p>
+        <p><span class="amount">Dollars</span> <span>Cents</span></p>
+
+        <h3 class="heading-secondary">Please describe your credit rating</h3>
+        <select name="choice" class="list">
+          <option value="">First choice</option>
+          <option value="">Second choice</option>
+          <option value="">Third choice</option>
+        </select>
+        <hr />
+        <!--  CONTACT  -->
+        <p class="contact">Contact Information</p>
+        <h3 class="heading-secondary">Name</h3>
+        <p>
+          <input type="text" class="title gap" />
+          <input type="text" class="fname gap" />
+          <input type="text" class="lname gap" />
+          <input type="text" class="suffix gap" />
+        </p>
+        <p>
+          <span class="title-text">Title</span>
+          <span class="fname-text">First Name</span>
+          <span class="lname-text">Last Name</span>
+          <span class="suffix-text">Suffix</span>
+        </p>
+
+        <div>
+          <h3 class="heading-secondary">Address</h3>
+          <input type="text" class="location-address" />
+          <p><span class="address">Street Address</span></p>
+
+          <input type="text" class="location-address" />
+          <p><span class="address">Address Line 2</span></p>
+
+          <div class="city-box">
+            <div>
+              <input type="text" class="city-right" />
+              <p><span class="address">City</span></p>
+            </div>
+
+            <div>
+              <input type="text" class="city" />
+              <p><span class="address">State / Province / Region</span></p>
+            </div>
+
+            <div>
+              <input type="text" class="city-right" />
+              <p><span class="address">Postal / Zipcode</span></p>
+            </div>
+
+            <div>
+              <select name="property" class="city-list">
+                <option value=""></option>
+
+                <option value="">Afghanistan</option>
+                <option value="">Albania</option>
+                <option value="">Bhutan</option>
+                <option value="">Bangaladesh</option>
+                <option value="">Canada</option>
+                <option value="">China</option>
+                <option value="">Denmark</option>
+                <option value="">Egypt</option>
+                <option value="">France</option>
+                <option value="">Germany</option>
+                <option value="">Hungary</option>
+                <option value="">Indonesia</option>
+                <option value="">India</option>
+                <option value="">Israel</option>
+                <option value="">Japan</option>
+                <option value="">Kuwait</option>
+                <option value="">Libya</option>
+                <option value="">Myanmer</option>
+                <option value="">Nepal</option>
+                <option value="">Oman</option>
+                <option value="">Pakistan</option>
+                <option value="">Quatar</option>
+                <option value="">Russia</option>
+                <option value="">Sri Lanka</option>
+                <option value="">Thailand</option>
+                <option value="">USA</option>
+                <option value="">Vietnam</option>
+                <option value="">West Indies</option>
+                <option value="">Yemen</option>
+              </select>
+              <p><span class="address">Country</span></p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="heading-secondary">Primary Contact Number</h3>
+        <p>
+          <input type="text" maxlength="3" class="number" /> -
+          <input type="text" maxlength="3" class="number" /> -
+          <input type="text" maxlength="4" class="number" />
+        </p>
+        <p>
+          <span class="number-text">###</span>
+          <span class="number-text">###</span>
+          <span class="number-text">####</span>
+        </p>
+
+        <h3 class="heading-secondary">Email Address</h3>
+        <input type="email" class="location-address" />
+
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </div>
+    <footer class="last">
+      <p class="footer-text">Powered By</p>
+      <p>
+        <img src="assets/images/footer.png" alt="logo" class="footer-img" />
+      </p>
+      <p class="footer-text">
+        See how easy it is
+        <a href="#" class="footer-text link">to create form</a>
+      </p>
+    </footer>
+  </body>
+</html>
