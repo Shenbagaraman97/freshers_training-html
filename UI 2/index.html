@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example Satisfication Survey</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,15 +16,15 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="wufoo-icon.png" alt="logo" class="icon" />
+        <img src="assets/images/wufoo-icon.png" alt="logo" class="icon" />
       </header>
 
       <!-- Header Text -->
       <div class="container-box">
-        <h2 class="heading">Example Satisfaction Survey Report</h2>
-        <span class="header-text"
-          >This is my report, View it in all glory!</span
-        >
+        <div class="header-textbox">
+          <h2 class="heading">Example Satisfaction Survey Report</h2>
+          <p class="header-text">This is my report, View it in all glory!</p>
+        </div>
         <hr />
 
         <!-- Entries/Views/Rate -->
@@ -35,9 +35,20 @@
               <p class="box-number">8,204</p>
               <p class="box-date">Since Jun 2008</p>
             </div>
-            <div class="square"></div>
-            <div class="square"></div>
+            <div class="square">
+              <h3 class="box-heading">Views</h3>
+              <p class="box-number green">12,763</p>
+              <p class="box-date">Since Jun 2008</p>
+            </div>
+            <div class="square">
+              <h3 class="box-heading">Conversion Rate</h3>
+              <p class="box-number blue">6.42%</p>
+              <p class="box-date">Since Jun 2008</p>
+            </div>
           </div>
+
+          <!-- Satisfy By  Table 1-->
+          <h3 class="heading-secondary">How satisfied?</h3>
         </div>
       </div>
     </div>
