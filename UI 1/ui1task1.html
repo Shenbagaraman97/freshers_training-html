@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="ui1task1style.css">
+    </head>
+    <body>
+        <div id="container" class="ltr">
+            <h1 id="logo">
+                <a href="https://www.wufoo.com/?utm_source=form-header&amp;utm_medium=logo"></a>
+            </h1>
+            <form id="form" name="form" class="wufoo page1">
+                <header id="header" class="info">
+                    <h2 class="header">Mortgage Application</h2>
+                </header>
+                <div class="topSpace estimateProperty">
+                    <label class="style estimateProperty" id="purpose">Purpose of Mortgage or Loan</label>
+                    <select id="loanpurpose" name="martgage" class="field select medium">
+                        <option value="Home Loan">Home Loan</option>
+                        <option value="Home Mortgage">Home Mortgage</option>
+                        <option value="Refinance">Refinance</option>
+                        <option value="Home Mortgage Refinance">Home Mortgage Refinance</option>
+                        <option value="Debt Consolidation Loan">Debt Consolidation Loan</option>
+                        <option value="Second Mortgage">Second Mortgage </option>
+                        <option value="Home Equity Loan">Home Equity Loan </option>
+                        <option value="Home Improvement Loan">Home Improvement Loan </option>
+                        <option value="Bad Credit Home Mortgage">Bad Credit Home Mortgage</option>
+                    </select>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty" id="amount">Loan Amount</label>
+                    <div class="display">
+                        <span class="symbol">$</span>
+                        <span>
+                            <input id="dollars" name="dollars" type="text" class="field text currency nospin" value="" size="10">
+                            <label for="dollars"> Dollars</label>
+                        </span>
+                        <span class="symbol radix">.</span>
+                        <span class="cents">
+                            <input id="Cents" name="Cents" type="text" class="field text nospin" value="" size="2" maxlength="2">
+                            <label for="cents">Cents</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc-notranslate estimateProperty" id="typeofproperty" for="property">Type of Property </label>
+                    <select id="property" name="property" class="field select medium"  tabindex="0" data-wufoo-field="dropdown">
+                        <option value="House"> House</option>
+                        <option value="Condo">Condo</option>
+                        <option value="Land">Land</option>
+                    </select>
+                </div>   
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty">Estimated Price or Value of Property</label>
+                    <div class="display">
+                        <span class="symbol">$</span>
+                        <span>
+                            <input id="Dollars" name="Dollars" type="text" class="field text currency nospin" value="" size="10" >
+                            <label for="Dollars">Dollars</label>
+                        </span>
+                        <span class="symbol radix">.</span>
+                        <span class="cents">
+                            <input id="cents1" name="cents1" type="text" class="field text nospin" value="" size="2" maxlength="2" >
+                            <label for="cents1">Cents</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty">Location Property</label>
+                    <div class="fulla">
+                        <div class="full-addr1">
+                            <input id="streetaddress" name="streetaddress" type="text" class="field-text-addr" value="" placeholder="">
+                            <label for="streetaddress">Street Address</label>
+                        </div>
+                        <div class="topSpace full-addr2">
+                            <input id="addressline2" name="addressline2" type="text" class="field-text-addr" value="" placeholder="" >
+                            <label for="addressline2">Address Line 2</label>
+                        </div>
+                        <div class="display">
+                            <div class="topSpace miniLeftTextfld">
+                                <input id="city1" name="city1" type="text" class="field-text-addr" value=""  placeholder="">
+                                <label for="city1">City</label>
+                            </div>&nbsp &nbsp &nbsp &nbsp &nbsp 
+                            <div class="topspace miniRightTextfld">
+                                <input id="state" name="state" type="text" class="field-text-addr" value=""  placeholder="">
+                                <label>state/provience/region </label>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <div class="topSpace miniLeftTextfld">
+                                <input id="postal" name="postal" type="text" class="field-text-addr" value="" placeholder="">
+                                <label for="postal">Postal / Zip Code</label>
+                            </div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                            <span class="topSpace miniRightTextfld">
+                                <select id="country" name="country" class="field-select-addr" data-wufoo-field="dropdown">
+                                    <option value="" selected="selected"></option>
+                                    <option value="United States">United States</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="France">France</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="India">India</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Åland Islands">Åland Islands</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                    <option value="Antarctica">Antarctica</option>
+                                    <option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Aruba">Aruba</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                </select>
+                                <label for="country">Country</label> 
+                            </span>      
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="topSpace estimateProperty">
+                    <label class="desc-notranslate estimateProperty" id="down"> Down Payment Percentage</label>
+                    <div class="downpayment">
+                        <select id="down" name="down" class="field select medium" data-wufoo-field="dropdown">
+                            <option value="" selected="selected"></option>
+                            <option value="Not Applicable">Not Applicable</option>
+                            <option value="0% - 5%">0% - 5%</option>
+                            <option value="6% - 10">6% - 10</option>
+                        </select>
+                    </div>
+                </div> 
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc-notranslate estimateProperty" id="currentmortgage">Current Mortgage Company</label>
+                    <select id="currentmortgagecompany" name="currentmortgagecompany" class="field select medium"  data-wufoo-field="dropdown">
+                        <option value="" selected="selected"></option>
+                        <option value="Company One"> Company One</option>
+                        <option value="Company Two">Company Two</option>
+                    </select>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc-notranslate estimateProperty" id="real-estate">Would you like a Referral to a Real Estate Agent?</label>
+                    <div class="referral">
+                        <select id="real-estate" name="real-estate" class="field select medium" data-wufoo-field="dropdown">
+                            <option value="" selected="selected"> </option>
+                            <option value="Yes, I'm buying a home">Yes, I'm buying a home</option>
+                            <option value="Yes, I'm selling and buying a home.">Yes, I'm selling and buying a home.</option>
+                            <option value="Yes, I'm selling.">Yes, I'm selling.</option>
+                            <option value="No.">No.</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="topSpace">
+                    <label class="desc estimateProperty " id="ages"> Age</label>
+                    <input id="ages" name="ages" type="text">
+                </div>
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty" id="occupation">Occupation</label>
+                    <input id="occupation" name="occupation" type="text" class="field text medium" value="" maxlength="255" placeholder="">
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc-notranslate estimateProperty" id="longLabel">How long have you been at your current job?</label>
+                    <div class="firstchoice">  
+                        <select name="currentjob" class="currentjob">
+                            <option value="First choice">First choice</option>
+                            <option value="Second choice">Second choice</option>
+                            <option value="Third choice">Third choice</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty">Household Income</label>
+                    <div class="display">
+                        <span class="symbol">$</span>
+                        <span>
+                            <input id="Dollars" name="Dollars" type="text" class="field text currency nospin" value="" size="10" >
+                            <label for="Dollars">Dollars</label>
+                        </span>
+                        <span class="symbol radix">.</span>
+                        <span class="cents">
+                            <input id="cents1" name="cents1" type="text" class="field text nospin" value="" size="2" maxlength="2">
+                            <label for="cents1">Cents</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="topSpace creditrating estimateProperty">
+                    <label class="desc-notranslate estimateProperty" for="creditrating">Please describe your credit rating.</label>
+                    <select  name="creditrating" class="field select medium" data-wufoo-field="dropdown">
+                        <option value="First choice">First choice</option>
+                        <option value="Second choice">Second choice</option>
+                        <option value="Third choice">Third choice </option>
+                    </select>
+                </div>
+
+                <section>
+                    <h3 class="contact">Contact Information</h3>
+                </section>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty" id="name">Name</label>
+                    <div class="display">
+                        <span>
+                            <input id="title" name="title" type="text" class="field text" value="" size="2"  placeholder="">
+                            <label for="title">Title</label>
+                        </span>
+                        <span>
+                            <input id="first" name="first" type="text" class="field text fn" value="" size="8"placeholder="">
+                            <label for="first">First</label>
+                        </span>
+                        <span>
+                            <input id="last" name="last" type="text" class="field text ln" value="" size="12" placeholder="">
+                            <label for="Last">Last</label>
+                        </span>
+                        <span>
+                            <input id="suffix" name="suffix" type="text" class="field text" value="" size="3" placeholder="">
+                            <label for="suffix">Suffix</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty" id="addr">Address</label>
+                    <div class="full addr1">
+                        <input id="streetaddress" name="streetaddress" type="text" class="field-text-addr" value="" placeholder="" >
+                        <label >Street Address</label>
+                    </div>
+                    <div class="topspace ull addr2">
+                        <input id="addressline2" name="addressline2" type="text" class="field-text-addr" value="" placeholder="" >
+                        <label for="addressline2">Address Line 2</label>
+                    </div>
+                    <div class="display">
+                        <div class="topSpace miniLeftTextfld">
+                            <input id="city" name="city" type="text" class="field-text-addr" value=""  placeholder="">
+                            <label>City</label>
+                        </div>&nbsp &nbsp &nbsp &nbsp
+                        <div class="topSpace miniRightTextfld">
+                            <input id="state" name="state" type="text" class="field-text-addr" value=""  placeholder="">
+                            <label>State / Province / Region</label>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <div class="topSpace miniLeftTextfld">
+                            <input id="postal" name="postal" type="text" class="field-text-addr" value="" maxlength="15"  placeholder="">
+                            <label for="postal">Postal / Zip Code</label>
+                        </div>&nbsp &nbsp &nbsp &nbsp 
+                        <span class="topSpace miniRightTextfld">
+                            <select id="country" name="country" class="field-select-addr"  data-wufoo-field="dropdown" placeholder=""  >
+                                <option value="" selected="selected"></option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="France">France</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="India">India</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Åland Islands">Åland Islands</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Anguilla">Anguilla</option>
+                                <option value="Antarctica">Antarctica</option>
+                                <option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                            </select>
+                            <label>Country</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty" id="primary">Primary Phone</label>
+                    <div class="display">
+                        <span>
+                            <input id="primary" name="primary" type="tel" class="field text" value="" size="3" maxlength="3"  placeholder="">
+                            <label>###</label>
+                        </span>   
+                        <span class="symbol">-</span> 
+                        <span>
+                            <input id="secondbox" name="secondbox" type="tel" class="field text" value="" size="3" maxlength="3" placeholder="">
+                            <label>###</label>
+                        </span> 
+                        <span class="symbol">-</span> 
+                        <span>
+                            <input id="thirdbox" name="thirdbox" type="tel" class="field text" value="" size="4" maxlength="4"  placeholder="">
+                            <label for="thirdbox">####</label>
+                        </span> 
+                    </div>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="desc estimateProperty" id="alternate">Alternate phone </label>
+                    <div class="display">
+                        <span>
+                            <input id="alternate" name="alternate" type="tel" class="field text" value="" size="3" maxlength="3" placeholder="">
+                            <label>###</label>
+                        </span>   
+                        <span class="symbol">-</span> 
+                        <span>
+                            <input id="secondbox" name="secondbox" type="tel" class="field text" value="" size="3" maxlength="3"  placeholder="">
+                            <label for="secondbox">###</label>
+                        </span> 
+                        <span class="symbol">-</span> 
+                        <span>
+                            <input id="thirdbox" name="thirdbox" type="tel" class="field text" value="" size="4" maxlength="4"  placeholder="">
+                            <label>####</label>
+                        </span> 
+                    </div>
+                
+                </div>
+                  
+                <div class="email topSpace estimateProperty">
+                    <label class="desc estimateProperty" id="emailaddr">Email Address</label>
+                    <div class="emailaddr">
+                        <input id="emailaddr" name="emailaddr" type="email" class="field-text-large" placeholder="">
+                    </div>
+                </div>
+
+                <div class="topSpace estimateProperty">
+                    <label class="buttons estimateProperty"></label>
+                    <div>
+                        <input id="Form" name="Form" class=" submit" type="submit" value="Submit">
+                    </div>
+                </div>
+
+            </form>
+		</div>
+		<a class="powertiny" href="https://www.wufoo.com/?utm_source=form-footer&amp;utm_medium=logo"  title="Powered by Wufoo" >
+            <a class="powertiny" href="https://www.wufoo.com/?utm_source=form-footer&amp;utm_medium=logo" target="_blank" title="Powered by Wufoo" >
+                <b class="powerdby"></b>Powered By</b>
+                <img src="./assets/logo.png" width="100" alt="Wufoo">
+            </a>  
+        </a>
+        <span class="see">See how easy it is to 
+            <a href="https://www.wufoo.com/form-builder/?utm_source=form-footer&amp;utm_medium=cta-link" >
+                create a form
+            </a>
+        </span>
+    </body>
+</html>
