@@ -6,15 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wufoo Forms</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="container">
@@ -41,12 +32,14 @@
         </select>
 
         <h3 class="heading-secondary">Loan Amount</h3>
-        <p>
-          <span class="symbol"> &#0036;</span
-          ><input class="rich" type="text" /> <span class="symbol"> .</span>
-          <input class="fair" type="text" />
+
+        <span class="symbol">$</span><input class="rich" type="text" />
+        <span class="symbol"> .</span>
+        <input class="fair" type="text" />
+
+        <p class="no-margin">
+          <span class="amount">Dollars</span> <span class="cents">Cents</span>
         </p>
-        <p><span class="amount">Dollars</span> <span>Cents</span></p>
 
         <!-- Property type and value -->
         <h3 class="heading-secondary">Type of Property</h3>
@@ -57,36 +50,45 @@
         </select>
 
         <h3 class="heading-secondary">Estimated Price or Value of Property</h3>
-        <p>
-          <span class="symbol"> &#0036;</span
-          ><input class="rich" type="text" /> <span class="symbol"> .</span>
-          <input class="fair" type="text" />
-        </p>
-        <p><span class="amount">Dollars</span> <span>Cents</span></p>
 
+        <span class="symbol"> &#0036;</span><input class="rich" type="text" />
+        <span class="symbol"> .</span>
+        <input class="fair" type="text" />
+
+        <p class="no-margin">
+          <span class="amount">Dollars</span> <span class="cents">Cents</span>
+        </p>
         <!--Location  -->
         <div>
           <h3 class="heading-secondary">Location of property</h3>
           <input type="text" class="location-address" />
-          <p><span class="address">Street Address</span></p>
+          <p class="no-margin-top">
+            <span class="address">Street Address</span>
+          </p>
 
           <input type="text" class="location-address" />
-          <p><span class="address">Address Line 2</span></p>
+          <p class="no-margin-top">
+            <span class="address">Address Line 2</span>
+          </p>
 
           <div class="city-box">
             <div>
               <input type="text" class="city-right" />
-              <p><span class="address">City</span></p>
+              <p class="no-margin-top"><span class="address">City</span></p>
             </div>
 
             <div>
               <input type="text" class="city" />
-              <p><span class="address">State / Province / Region</span></p>
+              <p class="no-margin-top">
+                <span class="address">State / Province / Region</span>
+              </p>
             </div>
 
             <div>
               <input type="text" class="city-right" />
-              <p><span class="address">Postal / Zipcode</span></p>
+              <p class="no-margin-top">
+                <span class="address">Postal / Zipcode</span>
+              </p>
             </div>
 
             <div>
@@ -123,7 +125,7 @@
                 <option value="">West Indies</option>
                 <option value="">Yemen</option>
               </select>
-              <p><span class="address">Country</span></p>
+              <p class="no-margin-top"><span class="address">Country</span></p>
             </div>
           </div>
         </div>
@@ -174,12 +176,14 @@
         </select>
 
         <h3 class="heading-secondary">Household Income</h3>
-        <p>
-          <span class="symbol"> &#0036;</span
-          ><input class="rich" type="text" /> <span class="symbol"> .</span>
-          <input class="fair" type="text" />
+
+        <span class="symbol"> &#0036;</span><input class="rich" type="text" />
+        <span class="symbol"> .</span>
+        <input class="fair" type="text" />
+
+        <p class="no-margin">
+          <span class="amount">Dollars</span> <span>Cents</span>
         </p>
-        <p><span class="amount">Dollars</span> <span>Cents</span></p>
 
         <h3 class="heading-secondary">Please describe your credit rating</h3>
         <select name="choice" class="list">
@@ -188,44 +192,53 @@
           <option value="">Third choice</option>
         </select>
         <hr />
+
         <!--  CONTACT  -->
         <p class="contact">Contact Information</p>
         <h3 class="heading-secondary">Name</h3>
-        <p>
-          <input type="text" class="title gap" />
+        <p class="no-margin">
+          <input type="text" class="title gap no-margin-left" />
           <input type="text" class="fname gap" />
           <input type="text" class="lname gap" />
           <input type="text" class="suffix gap" />
         </p>
-        <p>
+        <p class="no-margin">
           <span class="title-text">Title</span>
-          <span class="fname-text">First Name</span>
-          <span class="lname-text">Last Name</span>
+          <span class="fname-text">First</span>
+          <span class="lname-text">Last</span>
           <span class="suffix-text">Suffix</span>
         </p>
 
         <div>
           <h3 class="heading-secondary">Address</h3>
           <input type="text" class="location-address" />
-          <p><span class="address">Street Address</span></p>
+          <p class="no-margin-top">
+            <span class="address">Street Address</span>
+          </p>
 
           <input type="text" class="location-address" />
-          <p><span class="address">Address Line 2</span></p>
+          <p class="no-margin-top">
+            <span class="address">Address Line 2</span>
+          </p>
 
           <div class="city-box">
             <div>
               <input type="text" class="city-right" />
-              <p><span class="address">City</span></p>
+              <p class="no-margin-top"><span class="address">City</span></p>
             </div>
 
             <div>
               <input type="text" class="city" />
-              <p><span class="address">State / Province / Region</span></p>
+              <p class="no-margin-top">
+                <span class="address">State / Province / Region</span>
+              </p>
             </div>
 
             <div>
               <input type="text" class="city-right" />
-              <p><span class="address">Postal / Zipcode</span></p>
+              <p class="no-margin-top">
+                <span class="address">Postal / Zipcode</span>
+              </p>
             </div>
 
             <div>
@@ -262,23 +275,34 @@
                 <option value="">West Indies</option>
                 <option value="">Yemen</option>
               </select>
-              <p><span class="address">Country</span></p>
+              <p class="no-margin-top"><span class="address">Country</span></p>
             </div>
           </div>
         </div>
 
-        <h3 class="heading-secondary">Primary Contact Number</h3>
-        <p>
-          <input type="text" maxlength="3" class="number" /> -
-          <input type="text" maxlength="3" class="number" /> -
-          <input type="text" maxlength="4" class="number" />
-        </p>
-        <p>
+        <h3 class="heading-secondary">Primary Phone</h3>
+
+        <input type="text" maxlength="3" class="number" /> -
+        <input type="text" maxlength="3" class="number" /> -
+        <input type="text" maxlength="4" class="number" />
+
+        <p class="no-margin">
           <span class="number-text">###</span>
           <span class="number-text">###</span>
           <span class="number-text">####</span>
         </p>
 
+        <h3 class="heading-secondary">Alternate Phone</h3>
+
+        <input type="text" maxlength="3" class="number" /> -
+        <input type="text" maxlength="3" class="number" /> -
+        <input type="text" maxlength="4" class="number" />
+
+        <p class="no-margin">
+          <span class="number-text">###</span>
+          <span class="number-text">###</span>
+          <span class="number-text">####</span>
+        </p>
         <h3 class="heading-secondary">Email Address</h3>
         <input type="email" class="location-address" />
 
@@ -287,7 +311,7 @@
     </div>
     <footer class="last">
       <p class="footer-text">Powered By</p>
-      <p>
+      <p class="no-margin">
         <img src="assets/images/footer.png" alt="logo" class="footer-img" />
       </p>
       <p class="footer-text">
